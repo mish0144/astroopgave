@@ -1,4 +1,9 @@
 ---
+import Card from "../components/Card.astro";
+import Navigation from "../components/Navigation.astro";
+import "../styles/style.css";
+import Button from "../components/Button.astro";
+
 ---
 
 <html lang="en">
@@ -7,9 +12,26 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="stylesheet" href="style.css"> 
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<header>
+			<Navigation />
+		</header>
+		<main>
+			<h1>Astro</h1>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non in repellendus ut rem! Delectus dolorem tempora cupiditate in cumque rerum nemo maiores adipisci sed sequi eum eius esse, fuga a.</p>
+			<Button variant="primary" size="small">Tekst</Button>
+			<Button variant="secondary" size="medium">Tekst</Button>
+			<Button variant="secondary" size="large">Tekst</Button>
+			<!--  <Card header="Hej verden" />
+			<img src="public/mindhunter.png " alt="Mindhunter" />
+			<button>Klik her</button>
+
+			<Card header="Hej verden" />
+			<button>Klik her</button>
+			<img src="public/mindhunter.png " alt="Mindhunter" />  --!>
+	</main>
 	</body>
 </html>
